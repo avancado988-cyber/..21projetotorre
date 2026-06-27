@@ -120018,7 +120018,7 @@
     const cpfLimpo = campoCpf.value.replace(/\D/g, "");
 
     try {
-        const resposta = await fetch("https://produto2.onrender.com", {
+        const resposta = await fetch("https://produto2.onrender.com/criar-cliente", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ nomeCompleto: nome, cpf: cpfLimpo })
@@ -120104,7 +120104,7 @@
     };
 
     try {
-        const resposta = await fetch("https://produto2.onrender.com", {
+        const resposta = await fetch("https://produto2.onrender.com/criar-cliente", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(dadosCartao)
